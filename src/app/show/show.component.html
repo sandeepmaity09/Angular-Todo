@@ -11,7 +11,7 @@
         </tr>
         </thead>
         <tbody>
-        <tr *ngFor="let tsk of taskData; let i = index">
+        <tr *ngFor="let tsk of tasksArr; let i = index">
             <td>{{tsk.date}}</td>
             <td>{{tsk.title}}</td>
             <td>{{tsk.description}}</td>
@@ -37,8 +37,8 @@
             <label for="title">Title:</label>
             <input type="text" class="form-control" id="title" #title placeholder="Enter Title" value="{{task.title}}">
 
-            <label for="descrip">Description:</label>
-            <Input type="text" class="form-control" id="descrip" #descrip placeholder="Enter Description" value="{{task.descrip}}">
+            <label for="description">Description:</label>
+            <Input type="text" class="form-control" id="description" #description placeholder="Enter Description" value="{{task.description}}">
 
             <label for="priority">Priority:</label>
             <input type="text" class="form-control" id="priority" #priority placeholder="Enter Priority" value="{{task.priority}}">

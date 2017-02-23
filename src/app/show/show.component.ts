@@ -40,7 +40,7 @@ export class ShowComponent implements OnInit {
 
     ngOnInit() {
 
-        //this.tasksArr = this.service.tasks;
+        // this.tasksArr = this.service.tasks;
         this.reload();
         //console.log(JSON.stringify(this.tasksArr));
     }
@@ -48,6 +48,8 @@ export class ShowComponent implements OnInit {
     reload() {
         this.service.getData().subscribe(data => {
             this.tasksArr = data;
+            // console.log(JSON.stringify(data))
+            console.log(JSON.stringify(this.tasksArr))
         }, (err: any) => {
             console.log(err)
         }, () => {

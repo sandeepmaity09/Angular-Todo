@@ -33,7 +33,7 @@ var ShowComponent = (function () {
     // }
     //
     ShowComponent.prototype.ngOnInit = function () {
-        //this.tasksArr = this.service.tasks;
+        // this.tasksArr = this.service.tasks;
         this.reload();
         //console.log(JSON.stringify(this.tasksArr));
     };
@@ -41,6 +41,8 @@ var ShowComponent = (function () {
         var _this = this;
         this.service.getData().subscribe(function (data) {
             _this.tasksArr = data;
+            // console.log(JSON.stringify(data))
+            console.log(JSON.stringify(_this.tasksArr));
         }, function (err) {
             console.log(err);
         }, function () {

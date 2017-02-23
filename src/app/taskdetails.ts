@@ -1,9 +1,9 @@
 export class Tasks {
 
-    date: String;
-    title: String;
-    description: String;
-    priority: String;
+    date: string;
+    title: string;
+    description: string;
+    priority: string;
 
     constructor() {
         this.date = " ";

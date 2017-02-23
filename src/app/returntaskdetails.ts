@@ -1,10 +1,10 @@
 export class RetTask {
 
-    _id:String;
-    date: String;
-    title: String;
-    description: String;
-    priority: String;
+    _id:string;
+    date: string;
+    title: string;
+    description: string;
+    priority: string;
 
     constructor() {
         this._id = " ";
